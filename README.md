@@ -1,6 +1,6 @@
 # UCB document downloader chrome extension
 
-Ever since the last time my University [UCB](https://www.ucb.edu.bo/) updated the LMS that students and teachers
+Ever since the last time my University [UCB](https://www.ucb.edu.bo/) updated the LMS that students and professors
 use everyday, it came with an obnoxious file previewer that doesn't have an option to download said files the easy way.
 This extension aims to solve that issue!
 
