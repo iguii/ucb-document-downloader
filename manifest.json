@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+
+  "name": "NEO downloader",
+
+  "description": "Descarga los documentos de NEO que no se pueden descargar de forma normal.",
+
+  "version": "1.0",
+
+  "permissions": ["activeTab", "downloads"],
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://neo.ucb.edu.bo/student_lesson/show/*"],
+      "js": ["content.js"]
+    }
+  ],
+
+  "action": {
+    "default_icon": "icon.png"
+  }
+}
