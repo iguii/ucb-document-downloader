@@ -1,4 +1,4 @@
-# v1.0 Release uploaded to chrome web-store!
+# v1.0 Release uploaded to chrome web store!
 You can add this extension on your browser [here](https://chrome.google.com/webstore/detail/neo-downloader/obajlilkhjjifcbhkchdefomlkbbhpjm?hl=es-419&authuser=0)
 
 # UCB document downloader chrome extension
