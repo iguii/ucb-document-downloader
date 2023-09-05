@@ -1,5 +1,7 @@
 try {
-  const documentViewer = document.querySelectorAll(".no-print")[0].children[1].textContent.match(/PDFFile\s*:\s*'([^']+)'/)[1]; // gets the pdf file name
+  const documentViewer = document
+    .querySelectorAll(".no-print")[0]
+    .children[1].textContent.match(/PDFFile\s*:\s*'([^']+)'/)[1]; // gets the pdf file name
 
   const documentLink = document.createElement("a");
   documentLink.href = `https://neo.ucb.edu.bo${documentViewer}`;
@@ -9,7 +11,7 @@ try {
   documentButton.style = "margin-left: 10px;";
   documentButton.onclick = () => {
     window.open(documentLink.href, "_blank");
-  }
+  };
 
   const documentDownloadButton = document.createElement("button");
   documentDownloadButton.innerText = "DESCARGAR DOCUMENTO";
@@ -23,9 +25,10 @@ try {
   documentButtonContainer.appendChild(documentButton);
   documentButtonContainer.appendChild(documentDownloadButton);
 
-  const lessonArea = document.getElementsByClassName("max_user_content_width not_centered")[0].getElementsByTagName("p")[0];
+  const lessonArea = document
+    .getElementsByClassName("max_user_content_width not_centered")[0]
+    .getElementsByTagName("p")[0];
   lessonArea.prepend(documentButtonContainer);
-
 } catch (error) {
-  console.err("UCB NEO Downloader: Something went wrong.");
+  console.log("UCB NEO Downloader: Something went wrong.");
 }
