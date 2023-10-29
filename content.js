@@ -1,6 +1,6 @@
 try {
-  const documentViewer = document
-    .querySelectorAll(".no-print")[0]
+  const documentViewer = document.
+    querySelectorAll("div.no-print")[0]
     .children[1].textContent.match(/PDFFile\s*:\s*'([^']+)'/)[1]; // gets the pdf file name
 
   const documentLink = document.createElement("a");
@@ -30,5 +30,5 @@ try {
     .getElementsByTagName("p")[0];
   lessonArea.prepend(documentButtonContainer);
 } catch (error) {
-  console.log("UCB NEO Downloader: Something went wrong.");
+  console.log("UCB NEO Downloader: Something went wrong.", error);
 }
