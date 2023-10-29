@@ -5,7 +5,7 @@
 
   "description": "Descarga los documentos de NEO que no se pueden descargar de forma normal.",
 
-  "version": "1.0",
+  "version": "1.0.1",
 
   "permissions": ["activeTab", "downloads"],
 
